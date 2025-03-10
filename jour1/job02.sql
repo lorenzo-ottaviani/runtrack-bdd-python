@@ -1,1 +1,3 @@
-CREATE DATABASE LaPlateforme
+CREATE DATABASE LaPlateforme ;
+
+SHOW DATABASES ;
