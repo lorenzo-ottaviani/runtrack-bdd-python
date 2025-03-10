@@ -1,1 +1,1 @@
-DESCRIBE etudiant ;
+DESCRIBE etudiant;
