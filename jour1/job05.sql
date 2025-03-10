@@ -1,4 +1,4 @@
-INSERT INTO etudiant (nom, prenom, age, email)
+INSERT INTO etudiant (prenom, nom, age, email)
     VALUES
         ('Betty', 'Spaghetti', 23, 'betty.Spaghetti@laplateforme.io'),
         ('Chuck', 'Steak', 45, 'chuck.steak@laplateforme.io'),
