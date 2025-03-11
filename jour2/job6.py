@@ -1,10 +1,10 @@
 """
 Auteur : Lorenzo OTTAVIANI
-Date : 11/03/202 14h48
+Date : 11/03/2025 14h52
 But du programme :
-    Superficie totale de la table etage de la base de données LaPlateforme.
+    Capacité totale de la table salle de la base de données LaPlateforme.
 Entrée : Base de données SQL LaPlateforme.
-Sortie : La superficie totale.
+Sortie : Capacité totale.
 """
 
 import mysql.connector
@@ -31,10 +31,10 @@ ma_base = mysql.connector.connect(
 
 # Exécuter ma requête
 curseur = ma_base.cursor()
-curseur.execute("SELECT SUM(superficie) FROM etage")
+curseur.execute("SELECT SUM(capacite) FROM salle")
 
-superficie_totale = curseur.fetchone()
-print(f"La superficie de La Plateforme est de {superficie_totale[0]} m2")
+capacite_totale = curseur.fetchone()
+print(f"La capacité de toutes les salles est de {capacite_totale[0]} places.")
 
 # Fermer le curseur et la base
 curseur.close()
