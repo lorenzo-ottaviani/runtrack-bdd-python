@@ -1,6 +1,6 @@
 """
 Auteur : Lorenzo OTTAVIANI
-Date : 11/03/202 14h48
+Date : 11/03/2025 14h48
 But du programme :
     Superficie totale de la table etage de la base de données LaPlateforme.
 Entrée : Base de données SQL LaPlateforme.
