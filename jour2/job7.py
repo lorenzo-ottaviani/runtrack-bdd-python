@@ -86,8 +86,8 @@ class Employe:
         :return: ∅
         """
         curseur = self.ma_base.cursor()
-        curseur.execute(""" SELECT e.nom, e.prenom, e.salaire, s.nom AS service FROM employe e 
-                        JOIN service s ON e.id_service = s.id""")
+        curseur.execute("SELECT e.nom, e.prenom, e.salaire, s.nom AS service FROM employe e "
+                        "JOIN service s ON e.id_service = s.id")
         lignes = curseur.fetchall()
         for ligne in lignes:
             print(f"Nom: {ligne[0]}, Prénom: {ligne[1]}, Salaire: {ligne[2]}, Service: {ligne[3]}")
