@@ -17,6 +17,7 @@ load_dotenv(dotenv_path)
 
 # Accéder aux variables d'environnement
 my_host = getenv("HOST")
+my_port = getenv("PORT")
 my_user = getenv("USER")
 my_password = getenv("PASSWORD")
 
@@ -28,6 +29,7 @@ class Employe:
         """ Initialisation de la classe. """
         self.ma_base = mysql.connector.connect(
             host=my_host,
+            port=my_port,
             user=my_user,
             password=my_password,
             database="mafiosa"
